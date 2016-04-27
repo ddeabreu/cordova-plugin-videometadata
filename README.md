@@ -20,3 +20,13 @@ cordova.plugins.VideoMetadata.file(videoFile, function(data) {
     // error
 });
 ```
+
+```
+Work with a URI too:
+            cordova.plugins.VideoMetadata.file("file://"+imageURI, function(data) {
+                // data contains all our metadata
+                console.log("win "+JSON.stringify(data));
+                // error
+                console.log("fail "+JSON.stringify(error));
+            });
+```            
